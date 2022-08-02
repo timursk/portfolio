@@ -1,27 +1,13 @@
-import { blue, blueDark, gray, grayDark } from '@radix-ui/colors';
 import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
-
-const theme = {
-  colors: {
-    ...gray,
-    ...blue,
-  },
-};
-
-const darkTheme = {
-  colors: {
-    ...grayDark,
-    ...blueDark,
-  },
-};
+import { darkTheme, lightTheme } from '../../common/utils/constants';
 
 export const themeSlice = createSlice({
   name: 'theme',
-  initialState: theme,
+  initialState: lightTheme,
   reducers: {
     setLightTheme: (state) => {
-      state.colors = { ...theme.colors };
+      state.colors = { ...lightTheme.colors };
     },
 
     setDarkTheme: (state) => {

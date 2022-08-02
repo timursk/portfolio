@@ -1,10 +1,15 @@
 import '@emotion/react';
-import { gray, blue } from '@radix-ui/colors/types/light';
-import { grayDark, blueDark } from '@radix-ui/colors/types/dark';
 
-type LightColors = typeof gray & typeof blue;
-type DarkColors = typeof grayDark & typeof blueDark;
-type Colors = LightColors | DarkColors;
+interface ColorItem {
+  light: string;
+  main: string;
+  dark: string;
+  contrastText: string;
+}
+interface Colors {
+  primary: ColorItem;
+  secondary: ColorItem;
+}
 
 declare module '@emotion/react' {
   export interface Theme {

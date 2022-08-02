@@ -15,5 +15,5 @@ export const App = () => {
 };
 
 const StyledTitle = styled('h1')`
-  color: ${(props) => props.theme.colors.blue6};
+  color: ${(props) => props.theme.colors.primary.contrastText};
 `;
