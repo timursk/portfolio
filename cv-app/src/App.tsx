@@ -7,15 +7,23 @@ import { Header } from './components/Header';
 export const App = () => {
   return (
     <ThemeWrapper>
-      <Header />
-      <ThemeSwitcher />
-      <div>
-        <StyledTitle>TEST</StyledTitle>;
-      </div>
+      <Main>
+        <Container>
+          <Header />
+          <ThemeSwitcher />
+        </Container>
+      </Main>
     </ThemeWrapper>
   );
 };
 
-const StyledTitle = styled('h1')`
-  color: ${(props) => props.theme.colors.primary.contrastText};
+const Main = styled('main')`
+  background-color: ${(props) => props.theme.colors.primary.main};
+  min-height: 100vh;
+`;
+
+const Container = styled('div')`
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
 `;
