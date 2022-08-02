@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from '../../app/hooks';
+import { ThemeToggle } from '../../components/ThemeToggle/ThemeToggle';
 import { setDarkTheme, setLightTheme } from './themeSlice';
 
-enum THEMES {
+export enum THEMES {
   LIGHT = 'light',
   DARK = 'dark',
 }
@@ -19,5 +20,5 @@ export const ThemeSwitcher = () => {
     setTheme(newTheme);
   };
 
-  return <button onClick={handleClick}>{theme}</button>;
+  return <ThemeToggle theme={theme} onChange={handleClick} />;
 };
