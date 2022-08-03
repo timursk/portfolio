@@ -20,8 +20,8 @@ export const lightTheme = {
 export const darkTheme = {
   colors: {
     primary: {
-      light: gray.gray12,
-      main: gray.gray10,
+      light: gray.gray11,
+      main: gray.gray12,
       dark: gray.gray2,
       contrastText: gray.gray1,
     },

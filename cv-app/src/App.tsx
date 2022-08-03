@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import { Header } from './components/Header';
 import { Welcome } from './components/Welcome/Welcome';
 import { About } from './components/About/About';
+import { Contacts } from './components/Contacts/Contacts';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
           <Header />
           <Welcome />
           <About />
+          <Contacts />
         </Container>
       </Main>
     </ThemeWrapper>

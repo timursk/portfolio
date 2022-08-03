@@ -23,3 +23,27 @@ export const getStyledButtonContainer = (elem: any) => styled(elem)`
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
   }
 `;
+
+export const StyledSection = styled('section')`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+`;
+
+export const SectionTitle = styled('h2')`
+  text-decoration: underline;
+  text-decoration-color: ${(props) => props.theme.colors.primary.dark};
+  text-decoration-thickness: 4px;
+  text-underline-offset: 2px;
+`;
+
+export const SectionParagraph = styled('p')`
+  text-align: justify;
+`;
+
+export const SectionHighlited = styled('span')`
+  // color: ${(props) => props.theme.colors.primary.dark};
+  color: ${(props) => props.theme.colors.secondary.dark};
+  font-weight: 500;
+`;
