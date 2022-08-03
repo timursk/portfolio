@@ -2,7 +2,7 @@ import './App.css';
 import { ThemeWrapper } from './features/theme/ThemeWrapper';
 import styled from '@emotion/styled';
 import { Header } from './components/Header';
-import { Welcome } from './components/Welcome';
+import { Welcome } from './components/Welcome/Welcome';
 
 export const App = () => {
   return (
