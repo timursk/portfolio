@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Route, Routes } from 'react-router-dom';
 import { Main } from './pages/Main';
 import { ROUTES } from './common/utils/constants';
+import { Portfolio } from './pages/Portfolio';
 
 export const App = () => {
   return (
@@ -15,7 +16,7 @@ export const App = () => {
 
           <Routes>
             <Route path={ROUTES.MAIN} element={<Main />} />
-            <Route path={ROUTES.PORTFOLIO} element={<div>portfolio</div>} />
+            <Route path={ROUTES.PORTFOLIO} element={<Portfolio />} />
           </Routes>
         </Container>
       </StyledMain>

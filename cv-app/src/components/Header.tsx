@@ -5,7 +5,7 @@ import { DropdownMenu } from './DropdownMenu/DropdownMenu';
 export const Header = () => {
   return (
     <Container>
-      <Title>Timur Salikhov</Title>
+      <Title>🤖 Timur Salikhov</Title>
 
       <BtnsContainer>
         <ThemeSwitcher />
