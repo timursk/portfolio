@@ -2,26 +2,28 @@ import './App.css';
 import { ThemeWrapper } from './features/theme/ThemeWrapper';
 import styled from '@emotion/styled';
 import { Header } from './components/Header';
-import { Welcome } from './components/Welcome/Welcome';
-import { About } from './components/About/About';
-import { Contacts } from './components/Contacts/Contacts';
+import { Route, Routes } from 'react-router-dom';
+import { Main } from './pages/Main';
+import { ROUTES } from './common/utils/constants';
 
 export const App = () => {
   return (
     <ThemeWrapper>
-      <Main>
+      <StyledMain>
         <Container>
           <Header />
-          <Welcome />
-          <About />
-          <Contacts />
+
+          <Routes>
+            <Route path={ROUTES.MAIN} element={<Main />} />
+            <Route path={ROUTES.PORTFOLIO} element={<div>portfolio</div>} />
+          </Routes>
         </Container>
-      </Main>
+      </StyledMain>
     </ThemeWrapper>
   );
 };
 
-const Main = styled('main')`
+const StyledMain = styled('main')`
   color: ${(props) => props.theme.colors.primary.contrastText};
   background-color: ${(props) => props.theme.colors.primary.main};
   min-height: 100vh;
