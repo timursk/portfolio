@@ -29,6 +29,10 @@ export const StyledSection = styled('section')`
   flex-direction: column;
   gap: 10px;
   margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 export const SectionTitle = styled('h2')`
