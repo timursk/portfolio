@@ -26,6 +26,7 @@ const Greetings = styled('div')`
 `;
 
 const Container = styled('div')`
+  margin-bottom: 15px;
   @media (min-width: 640px) {
     display: flex;
   }

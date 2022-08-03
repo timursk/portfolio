@@ -3,6 +3,7 @@ import { ThemeWrapper } from './features/theme/ThemeWrapper';
 import styled from '@emotion/styled';
 import { Header } from './components/Header';
 import { Welcome } from './components/Welcome/Welcome';
+import { About } from './components/About/About';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
         <Container>
           <Header />
           <Welcome />
+          <About />
         </Container>
       </Main>
     </ThemeWrapper>
