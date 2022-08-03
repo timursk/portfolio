@@ -14,6 +14,7 @@ export const getStyledButtonContainer = (elem: any) => styled(elem)`
   background-color: ${(props) => props.theme.colors.secondary.light};
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: 0.2s;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.secondary.main};
