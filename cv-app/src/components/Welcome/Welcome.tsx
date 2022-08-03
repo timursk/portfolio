@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Greetings } from '../common/Greetings';
 import { Avatar } from './Avatar';
 import { Title } from './Title';
 
@@ -15,15 +16,6 @@ export const Welcome = () => {
     </>
   );
 };
-
-const Greetings = styled('div')`
-  width: 100%;
-  padding: 10px 30px;
-  margin-bottom: 15px;
-  border-radius: 0.5rem;
-  background: ${(props) => props.theme.colors.primary.light};
-  text-align: center;
-`;
 
 const Container = styled('div')`
   margin-bottom: 15px;
