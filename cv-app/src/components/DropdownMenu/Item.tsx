@@ -1,20 +1,24 @@
 import styled from '@emotion/styled';
 import { Item as ItemPrimitive } from '@radix-ui/react-dropdown-menu';
+import { ROUTES } from '../../common/utils/constants';
+import { LinkComponent } from '../LinkComponent';
 
 interface Props {
   title: string;
+  path: ROUTES;
 }
 
-export const Item = ({ title }: Props) => {
+export const Item = ({ title, path }: Props) => {
   return (
     <StyledItem>
-      <StyledLink href="/">{title}</StyledLink>
+      <LinkComponent path={path}>
+        <StyledSpan>{title}</StyledSpan>
+      </LinkComponent>
     </StyledItem>
   );
 };
 
 const StyledItem = styled(ItemPrimitive)`
-  padding: 7px;
   border-radius: 3px;
   font-size: 1.1rem;
   cursor: pointer;
@@ -26,14 +30,10 @@ const StyledItem = styled(ItemPrimitive)`
   }
 
   &[data-highlighted=''] {
-    // color: ${(props) => props.theme.colors.primary.dark};
-    // background-color: ${(props) => props.theme.colors.primary.dark};
     background-color: ${(props) => props.theme.colors.secondary.main};
   }
 `;
 
-const StyledLink = styled('a')`
-  color: ${(props) => props.theme.colors.primary.contrastText};
-  text-decoration: none;
-  user-select: none;
+const StyledSpan = styled('span')`
+  padding: 7px;
 `;

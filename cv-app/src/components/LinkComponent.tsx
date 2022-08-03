@@ -11,6 +11,8 @@ export const LinkComponent = ({ path, children }: Props) => {
 };
 
 const StyledLink = styled(Link)`
+  display: inline-flex;
+  width: 100%;
   color: ${(props) => props.theme.colors.secondary.contrastText};
   text-decoration: none;
 `;
