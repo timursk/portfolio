@@ -6,14 +6,15 @@ interface Props {
   img: string;
   alt: string;
   description: string;
+  link: string;
   ratio?: number;
 }
 
 const DEFAULT_RATIO = 16 / 9;
 
-export const Card = ({ img, alt, description, ratio = DEFAULT_RATIO }: Props) => {
+export const Card = ({ img, alt, description, link, ratio = DEFAULT_RATIO }: Props) => {
   const handleClick = () => {
-    document.location.href = 'https://github.com/timursk/rslang';
+    window.open(`https://github.com/timursk/${link}`, '_blank');
   };
 
   return (
