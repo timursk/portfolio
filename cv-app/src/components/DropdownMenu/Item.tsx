@@ -6,11 +6,16 @@ import { LinkComponent } from '../LinkComponent';
 interface Props {
   title: string;
   path: ROUTES;
+  link?: string;
 }
 
-export const Item = ({ title, path }: Props) => {
+export const Item = ({ title, path, link }: Props) => {
+  const handleClick = () => {
+    window.open(link, '_blank');
+  };
+
   return (
-    <StyledItem>
+    <StyledItem onClick={link ? handleClick : null}>
       <LinkComponent path={path}>
         <StyledSpan>{title}</StyledSpan>
       </LinkComponent>

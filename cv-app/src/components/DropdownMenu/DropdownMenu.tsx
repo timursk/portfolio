@@ -7,7 +7,7 @@ import { Trigger } from './Trigger';
 const MENU_ITEMS = [
   { title: 'About', path: ROUTES.MAIN },
   { title: 'Works', path: ROUTES.PORTFOLIO },
-  { title: 'View Source', path: ROUTES.PORTFOLIO },
+  { title: 'View Source', path: ROUTES.PORTFOLIO, link: 'https://github.com/timursk/portfolio' },
 ];
 
 export const DropdownMenu = () => {
@@ -16,8 +16,8 @@ export const DropdownMenu = () => {
       <Trigger />
 
       <Content>
-        {MENU_ITEMS.map(({ title, path }, idx) => (
-          <Item key={idx} title={title} path={path} />
+        {MENU_ITEMS.map(({ title, path, link }, idx) => (
+          <Item key={idx} title={title} path={path} link={link} />
         ))}
       </Content>
     </DropdownContainer>
