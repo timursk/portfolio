@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Item as ItemPrimitive } from '@radix-ui/react-dropdown-menu';
-import { ROUTES } from '../../common/utils/constants';
+import { ROUTES } from '../../common/constants/common';
 import { LinkComponent } from '../LinkComponent';
 
 interface Props {

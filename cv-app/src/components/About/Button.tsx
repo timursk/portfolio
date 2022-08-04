@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { ChevronRightIcon } from '@radix-ui/react-icons';
-import { ROUTES } from '../../common/utils/constants';
+import { ROUTES } from '../../common/constants/common';
 import { LinkComponent } from '../LinkComponent';
 
 export const Button = () => {

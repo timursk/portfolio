@@ -1,5 +1,5 @@
 import { Root as DropdownContainer } from '@radix-ui/react-dropdown-menu';
-import { ROUTES } from '../../common/utils/constants';
+import { ROUTES } from '../../common/constants/common';
 import { Content } from './Content';
 import { Item } from './Item';
 import { Trigger } from './Trigger';

@@ -33,8 +33,3 @@ export const darkTheme = {
     },
   },
 };
-
-export enum ROUTES {
-  MAIN = '/',
-  PORTFOLIO = '/portfolio',
-}

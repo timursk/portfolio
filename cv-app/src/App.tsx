@@ -4,8 +4,9 @@ import styled from '@emotion/styled';
 import { Header } from './components/Header';
 import { Route, Routes } from 'react-router-dom';
 import { Main } from './pages/Main';
-import { ROUTES } from './common/utils/constants';
+import { ROUTES } from './common/constants/common';
 import { Portfolio } from './pages/Portfolio';
+import { Project } from './pages/Project';
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
           <Routes>
             <Route path={ROUTES.MAIN} element={<Main />} />
             <Route path={ROUTES.PORTFOLIO} element={<Portfolio />} />
+            <Route path={ROUTES.PORTFOLIO + '/:project'} element={<Project />} />
           </Routes>
         </Container>
       </StyledMain>

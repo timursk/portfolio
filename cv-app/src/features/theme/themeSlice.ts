@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
-import { darkTheme, lightTheme } from '../../common/utils/constants';
+import { darkTheme, lightTheme } from '../../common/constants/themes';
 
 export const themeSlice = createSlice({
   name: 'theme',
