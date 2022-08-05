@@ -1,18 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ce3c66e7.css",
-    "main.js": "/portfolio/static/js/main.bd75a4b8.js",
+    "main.js": "/portfolio/static/js/main.5b7def53.js",
+    "static/media/christmas2.png": "/portfolio/static/media/christmas2.18cdafc61bab854843ea.png",
     "static/media/rslang4.png": "/portfolio/static/media/rslang4.bfe2b8ed769734227252.png",
+    "static/media/rslang1.png": "/portfolio/static/media/rslang1.df295eebf07049fab268.png",
+    "static/media/rick3.png": "/portfolio/static/media/rick3.8648d9f1bb12509ba29f.png",
+    "static/media/rslang2.png": "/portfolio/static/media/rslang2.375a47f817370c1d450a.png",
     "static/media/christmas.png": "/portfolio/static/media/christmas.3f0b079005b35ca5e517.png",
+    "static/media/rick2.png": "/portfolio/static/media/rick2.3a5c45fe3795fefce3b9.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.bbfe84c588c2c77083da.jpg",
+    "static/media/pma1.png": "/portfolio/static/media/pma1.a10886ac270ed9a6c66b.png",
+    "static/media/christmas1.png": "/portfolio/static/media/christmas1.d5995dcad3731f6f135c.png",
     "static/media/pma4.png": "/portfolio/static/media/pma4.2f314e18d4ace659f40c.png",
     "static/media/rick1.png": "/portfolio/static/media/rick1.0106ae9c9b229ba17101.png",
     "index.html": "/portfolio/index.html",
     "main.ce3c66e7.css.map": "/portfolio/static/css/main.ce3c66e7.css.map",
-    "main.bd75a4b8.js.map": "/portfolio/static/js/main.bd75a4b8.js.map"
+    "main.5b7def53.js.map": "/portfolio/static/js/main.5b7def53.js.map"
   },
   "entrypoints": [
     "static/css/main.ce3c66e7.css",
-    "static/js/main.bd75a4b8.js"
+    "static/js/main.5b7def53.js"
   ]
 }
