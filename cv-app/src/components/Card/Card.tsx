@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Root as AspectRatioRoot } from '@radix-ui/react-aspect-ratio';
+import { Link } from 'react-router-dom';
 import { StyledContainer } from './StyledContainer';
 
 interface Props {
@@ -13,12 +14,8 @@ interface Props {
 const DEFAULT_RATIO = 16 / 9;
 
 export const Card = ({ img, alt, description, link, ratio = DEFAULT_RATIO }: Props) => {
-  const handleClick = () => {
-    window.open(`https://github.com/timursk/${link}`, '_blank');
-  };
-
   return (
-    <div onClick={handleClick}>
+    <StyledLink to={`${link}`}>
       <StyledContainer content={alt}>
         <AspectRatioRoot ratio={ratio}>
           <Img src={img} alt={alt} />
@@ -27,7 +24,7 @@ export const Card = ({ img, alt, description, link, ratio = DEFAULT_RATIO }: Pro
 
       <h3>{alt}</h3>
       <p>{description}</p>
-    </div>
+    </StyledLink>
   );
 };
 
@@ -42,4 +39,8 @@ const Img = styled('img')`
     transform: scale(1.05);
     transition: 0.2s ease-in-out;
   }
+`;
+
+const StyledLink = styled(Link)`
+  all: unset;
 `;

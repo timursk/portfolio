@@ -1,6 +1,10 @@
 import { useMemo } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { ROUTES } from '../common/constants/common';
 import { PROJECTS } from '../common/constants/projects';
+import { WorkBack } from '../components/WorkBack';
+import { WorkImage } from '../components/WorkImage';
+import { WorkText } from '../components/WorkText';
 
 export const Project = () => {
   const { project: projectParam } = useParams();
@@ -10,17 +14,26 @@ export const Project = () => {
   }, [projectParam]);
 
   if (!project) {
-    return <div>Looks like you went to the wrong link! Go back and select a project</div>;
+    return (
+      <div>
+        Looks like you went to the wrong link! Go <Link to={ROUTES.PORTFOLIO}>back</Link> and select
+        a project
+      </div>
+    );
   }
-  const { name, description, stack, images } = project;
+  const { name, description, stack, images, link } = project;
 
   return (
     <>
-      <div>{name}</div>
-      <div>{description}</div>
-      <div>{stack}</div>
+      <WorkBack name={name} />
+
+      <WorkText title="name" text={name} />
+      <WorkText title="description" text={description} />
+      <WorkText title="stack" text={stack} />
+      <WorkText title="repo" text={link} link={true} />
+
       {images.map((image, idx) => (
-        <img key={idx} src={image} alt="some image" />
+        <WorkImage key={idx} image={image} name={name} />
       ))}
     </>
   );
